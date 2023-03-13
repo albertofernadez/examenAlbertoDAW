@@ -13,8 +13,8 @@ fetch('https://raw.githubusercontent.com/FRomero999/ExamenDIW2022/main/rutas_arq
         const template = document.querySelector('#lista');
         for (let i = 0; i < data.length; i++) {
             const clone = template.content.cloneNode(true);
-            let nombre = clone.getElementById('nombre')
-            let horario = clone.getElementById('horario')
+            let nombre = clone.getElementById('nombres')
+            let horario = clone.getElementById('horarios')
             let direccion = clone.getElementById('direccion')
             let telefono = clone.getElementById('numerotelefono')
             nombre.textContent = data[i].properties.nombre;

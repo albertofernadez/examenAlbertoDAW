@@ -1,4 +1,4 @@
-.elemento {
+.elementos {
     border-bottom: 1px solid black;
     margin: 2%;
 }
@@ -7,7 +7,7 @@
     display: flex;
 }
 
-.tarjeta {
+.tarjetas {
     margin-right: 2%;
     color: white;
     background-color: #0071DA;

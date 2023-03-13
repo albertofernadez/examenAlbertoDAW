@@ -9,8 +9,8 @@ fetch('https://raw.githubusercontent.com/FRomero999/ExamenDIW2022/main/rutas_arq
     .then(data => {
         console.log(data);
         console.log(data[24].properties.nombre);
-        const tbody = document.querySelector("#listaElementos");
-        const template = document.querySelector('#elementoLista');
+        const tbody = document.querySelector("#elementos");
+        const template = document.querySelector('#lista');
         for (let i = 0; i < data.length; i++) {
             const clone = template.content.cloneNode(true);
             let nombre = clone.getElementById('nombre')

@@ -16,14 +16,10 @@ fetch('https://raw.githubusercontent.com/FRomero999/ExamenDIW2022/main/rutas_arq
             let nombre = clone.getElementById('nombres')
             let horario = clone.getElementById('horarios')
             let direccion = clone.getElementById('direccion')
-            let telefono = clone.getElementById('numerotelefono')
             nombre.textContent = data[i].properties.nombre;
             horario.textContent = data[i].properties.horario;
             direccion.textContent = data[i].properties.direccion;
-            telefono.textContent = data[i].properties.telefono;
-            if (telefono.textContent != "") {
-                telefono.classList.add('tarjeta')
-            }
+           
             tbody.appendChild(clone);
 
             var marcador = L.marker([data[i].properties.x, data[i].properties.y]).addTo(mapa);
